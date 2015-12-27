@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 var init = function () {
-    var dirs = fs.readdirSync(RootDirString); 
+    var dirs = fs.readdirSync(RootDirString);
     picDirs.dirStat = [];
     for (i = 0; i < dirs.length; i++) {
         var dirName = dirs[i];
@@ -78,7 +78,7 @@ var init = function () {
 }
 
 postMsg.initCb = init;
-init();
+// init();
 
 
 app.use('/', routes);
